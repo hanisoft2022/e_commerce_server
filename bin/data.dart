@@ -206,7 +206,7 @@ List<ViewModuleDto> viewModules(String mallType) {
 }
 
 // menu data
-List<Map<String, Object>> marketStore = [
+List<Map<String, Object>> marketStoreMenu = [
   {"tabId": 10001, "title": "F-추천"},
   {"tabId": 10002, "title": "신상품"},
   {"tabId": 10003, "title": "베스트"},
@@ -214,7 +214,7 @@ List<Map<String, Object>> marketStore = [
   {"tabId": 10005, "title": "특가/혜택"},
 ];
 
-List<Map<String, Object>> beautyStore = [
+List<Map<String, Object>> beautyStoreMenu = [
   {"tabId": 20001, "title": "F-추천"},
   {"tabId": 20002, "title": "LUXURY"},
   {"tabId": 20003, "title": "신상품"},

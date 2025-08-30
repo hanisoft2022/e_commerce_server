@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
@@ -40,7 +41,7 @@ part 'request.dart';
 
 final _router = Router()
   ..get('/api/menus/<mallType>', _menuHandler)
-  ..get('/api/view_modules/<tabId>/<page>', _echoHandler);
+  ..get('/api/view_modules/<tabId>/<page>', _viewModuleHandler);
 
 void main(List<String> args) async {
   final handler = Pipeline().addMiddleware(logRequests()).addHandler(_router.call);
